@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpKernel\DependencyInjection\RegisterControllerArgumentLocatorsPass;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/welcome', function () {
+    return 'view';
+});
+
+// Route::post('/Registration', [RegistrationController::class, 'add']);
+
+// Route::post('/5ara', [RegistrationController::class, 'add']);

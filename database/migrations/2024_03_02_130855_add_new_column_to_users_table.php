@@ -15,7 +15,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('borrowed_book_id')->nullalbe();
 
-            $table->foreign('borrowed_book_id')->references('id')->on('books')->onDelete('cascade');
+            // $table->foreign('borrowed_book_id')->references('id')->on('books')->onDelete('cascade');
         });
     }
 
