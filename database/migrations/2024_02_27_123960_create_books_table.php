@@ -14,12 +14,6 @@ return new class extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->id();
             $table->string('book_name');
-            $table->integer('publisher_id');
-            $table->boolean('is_bowrrowed');
-
-            $table->date('date_bowrrowed')->nullable();
-            $table->integer('times_bowrrowed')->nullable();
-            $table->timestamps();
         });
     }
 

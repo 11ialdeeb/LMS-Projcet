@@ -17,11 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('password');
 
-            $table->boolean('borrower');
-
-
             $table->boolean('isPublisher');
-            $table->timestamps();
         });
     }
 
